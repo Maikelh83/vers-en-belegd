@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+<meta name="theme-color" content="#e1b7ab">
+
+<!-- ===================================================================
+     VERS & BELEGD — zakelijke lunchpropositie van Boslaantje Doen
+     Premium herontwerp. Brandbook leidend: roze #e1b7ab · wit · zwart,
+     Gloria Hallelujah (koppen/accenten) · Lato (tekst).
+     Signatuur: het handgetekende broodje uit het logo, als lijn-motief
+     door de hele pagina — ambachtelijk, vers, echt.
+     Tone of voice: persoonlijk, duidelijk, met 'je'.
+     =================================================================== -->
+
+<title>Vers & Belegd · Zakelijke lunch bezorgd in Veenendaal e.o.</title>
+<meta name="description" content="De vaste lunchpartner voor bedrijven, scholen en trainingslocaties in Veenendaal, Ede, Rhenen e.o. Verse broodjes, vergaderlunch en dagelijkse bedrijfslunch — altijd op tijd. Onderdeel van Boslaantje Doen.">
+<meta name="keywords" content="zakelijke lunch Veenendaal, bedrijfslunch Veenendaal, vergaderlunch Veenendaal, lunch bezorgen Veenendaal, lunch bezorgen Ede, zakelijke lunch Rhenen, lunchservice Ederveen, catering scholen, broodjes bezorgen kantoor">
+<link rel="canonical" href="https://www.versenbelegd.nl/">
+
+<meta property="og:title" content="Vers & Belegd · Zakelijke lunch in Veenendaal e.o.">
+<meta property="og:description" content="De vaste lunchpartner voor bedrijven, scholen en trainingslocaties in Veenendaal en omgeving. Onderdeel van Boslaantje Doen.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.versenbelegd.nl/">
+<meta property="og:image" content="https://www.versenbelegd.nl/images/hero.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="nl_NL">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "Vers & Belegd",
+  "description": "Zakelijke lunchservice voor bedrijven, scholen en trainingslocaties in Veenendaal en omgeving.",
+  "parentOrganization": { "@type": "Organization", "name": "Boslaantje Doen" },
+  "servesCuisine": "Lunch",
+  "areaServed": ["Veenendaal","Rhenen","Ede","Ederveen","Renswoude","Scherpenzeel","Overberg","Amerongen","Achterberg"],
+  "url": "https://www.versenbelegd.nl/",
+  "telephone": "+31318202230",
+  "email": "info@versenbelegd.nl",
+  "sameAs": ["https://www.instagram.com/versenbelegd/"]
+}
+</script>
+
+<style>
+  :root{
+    /* ===== Vers & Belegd brandbook-palet ===== */
+    --rose:#e1b7ab;
+    --rose-deep:#d29e90;
+    --rose-ink:#9c6355;
+    --rose-wash:#faf1ec;
+    --rose-mist:#f3e4de;
+    --paper:#ffffff;
+    --ink:#000000;
+    --ink-soft:#2b2320;
+    --line:#ecdcd5;
+    --logo:url('images/logo.webp');
+    --bread:url('images/bread.webp');
+    --vbwhite:url('images/vbwhite.webp');
+    --vbstamp:url('images/vbstamp.webp');
+    --font-display:'Gloria Hallelujah','Segoe Print',cursive;
+    --font-body:'Lato',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    --wrap:1160px;
+    --r:20px;
+    --shadow-s:0 6px 18px -12px rgba(60,30,20,.35);
+    --shadow-m:0 20px 44px -26px rgba(60,30,20,.42);
+    --shadow-l:0 40px 80px -40px rgba(60,30,20,.5);
+    --ease:cubic-bezier(.22,.61,.36,1);
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+  body{
+    font-family:var(--font-body);
+    color:var(--ink-soft);
+    background:var(--paper);
+    line-height:1.62;
+    font-size:16.5px;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+
+  h1,h2,h3.display{
+    font-family:var(--font-display);
+    font-weight:400;
+    line-height:1.16;
+    color:var(--ink);
+    letter-spacing:0;
+  }
+  h2{font-size:clamp(1.85rem,4.4vw,2.9rem)}
+
+  .eyebrow{
+    font-family:var(--font-body);font-weight:900;font-size:.72rem;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--rose-ink);
+    display:inline-flex;align-items:center;gap:.6em;
+  }
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--rose-deep);display:inline-block}
+
+  /* line-art broodje-signatuur */
+  .roll{display:inline-block;color:var(--rose-ink)}
+  .roll svg{display:block}
+
+  /* ---- knoppen ---- */
+  .btn{
+    display:inline-flex;align-items:center;gap:.55em;
+    font-family:var(--font-body);font-weight:900;font-size:1rem;
+    padding:.92em 1.6em;border-radius:999px;border:2px solid transparent;
+    cursor:pointer;transition:transform .18s var(--ease),box-shadow .18s var(--ease),background .18s var(--ease),color .18s var(--ease);
+    line-height:1;
+  }
+  .btn:focus-visible{outline:3px solid var(--rose-ink);outline-offset:3px}
+  .btn svg{width:1.05em;height:1.05em}
+  .btn-primary{background:var(--ink);color:#fff;box-shadow:0 12px 26px -14px rgba(0,0,0,.55)}
+  .btn-primary:hover{background:#241d1a;transform:translateY(-2px);box-shadow:0 18px 32px -14px rgba(0,0,0,.6)}
+  .btn-rose{background:var(--rose);color:var(--ink);box-shadow:0 12px 26px -14px rgba(156,99,85,.6)}
+  .btn-rose:hover{background:var(--rose-deep);transform:translateY(-2px)}
+  .btn-outline{background:transparent;color:var(--ink);border-color:var(--ink)}
+  .btn-outline:hover{background:var(--ink);color:#fff}
+  .btn-light{background:#fff;color:var(--ink);border-color:#fff}
+  .btn-light:hover{background:transparent;color:#fff;border-color:#fff}
+
+  /* ============ merkband ============ */
+  .parent-bar{
+    background:var(--ink);color:#fff;font-size:.82rem;
+    display:flex;align-items:center;justify-content:center;gap:.7rem;
+    padding:.55rem 1rem;text-align:center;flex-wrap:wrap;letter-spacing:.01em;
+  }
+  .parent-bar .bd-logo{height:20px;width:56px;background:var(--logo) left center/contain no-repeat;
+    filter:invert(1);display:inline-block;flex:none}
+  .parent-bar a{font-weight:700;text-decoration:underline;text-underline-offset:2px}
+  .parent-bar a:hover{color:var(--rose)}
+
+  /* ---- header ---- */
+  header{position:sticky;top:0;z-index:60;background:rgba(225,183,171,.94);
+    backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:box-shadow .25s,border-color .25s}
+  header.scrolled{box-shadow:0 8px 26px -20px rgba(0,0,0,.6);border-color:rgba(0,0,0,.06)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:1rem}
+  .brand{display:flex;align-items:center;gap:.55rem;min-width:0}
+  .brand .vb-mark{width:52px;height:30px;flex:none;background:var(--bread) center/contain no-repeat}
+  .brand .name{font-family:var(--font-display);font-size:1.18rem;color:var(--ink);white-space:nowrap;line-height:1}
+  .nav-links{display:none;align-items:center;gap:1.8rem}
+  .nav-links a{font-family:var(--font-body);font-weight:700;font-size:.95rem;color:var(--ink);position:relative;transition:opacity .15s}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--ink);transition:width .2s var(--ease)}
+  .nav-links a:hover::after{width:100%}
+  .nav .btn{padding:.62em 1.2em;font-size:.9rem}
+
+  .nav-toggle{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;
+    width:44px;height:44px;padding:0 10px;background:none;border:none;cursor:pointer;margin-left:.2rem}
+  .nav-toggle span{display:block;height:2.5px;width:100%;background:var(--ink);border-radius:2px;
+    transition:transform .25s var(--ease),opacity .2s ease}
+  .nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+  .nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+
+  .mobile-menu{display:flex;flex-direction:column;gap:.2rem;background:var(--rose);
+    border-top:1px solid rgba(0,0,0,.12);padding:.6rem 24px 1.2rem}
+  .mobile-menu[hidden]{display:none}
+  .mobile-menu a{color:var(--ink);font-weight:700;font-size:1.06rem;padding:.85rem .2rem;
+    border-bottom:1px solid rgba(0,0,0,.10)}
+  .mobile-menu a:last-of-type{border-bottom:none}
+  .mobile-menu .mobile-order{margin-top:.9rem;justify-content:center;border-bottom:none;
+    background:var(--ink);color:#fff;border-radius:999px}
+  @media(min-width:960px){
+    .nav-links{display:flex}.nav-toggle{display:none}.mobile-menu{display:none !important}
+    .brand .name{font-size:1.4rem}
+  }
+  @media (prefers-reduced-motion:reduce){.nav-toggle span{transition:none}}
+
+  /* ---- hero ---- */
+  .hero{position:relative;background:var(--rose);overflow:hidden;isolation:isolate}
+  .hero-orb{position:absolute;border-radius:50%;background:rgba(255,255,255,.34);z-index:0;filter:blur(2px)}
+  .hero-orb.a{right:-140px;top:-120px;width:440px;height:440px}
+  .hero-orb.b{left:-90px;bottom:-160px;width:320px;height:320px;background:rgba(255,255,255,.22)}
+  .hero-roll{position:absolute;right:6%;bottom:8%;width:120px;color:rgba(155,99,85,.28);z-index:1;
+    animation:floaty 7s ease-in-out infinite}
+  @keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-14px) rotate(2deg)}}
+  @media (prefers-reduced-motion:reduce){.hero-roll{animation:none}}
+  .hero .wrap{position:relative;z-index:2}
+  .hero-grid{display:grid;gap:2.6rem;align-items:center;padding:clamp(3rem,7vw,5.4rem) 0 clamp(2.6rem,5vw,4rem)}
+  @media(min-width:980px){.hero-grid{grid-template-columns:1.08fr .92fr;gap:3.4rem}}
+  .hero h1{font-size:clamp(2rem,4.8vw,3.15rem);margin:.7rem 0 1.1rem;max-width:15ch}
+  .hero .lead{font-size:clamp(1.08rem,2.2vw,1.28rem);max-width:42ch;color:#3a2c27;font-weight:400}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:1.9rem}
+
+  .hero-card{position:relative}
+  .hero-photo{position:relative;width:100%;aspect-ratio:4/5;border-radius:calc(var(--r) + 4px);overflow:hidden;
+    background:var(--rose-wash);border:2px dashed var(--rose-deep);box-shadow:var(--shadow-l);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+    color:var(--rose-ink);padding:1.2rem;gap:.5rem;animation:cardfloat 8s ease-in-out infinite}
+  @keyframes cardfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  @media (prefers-reduced-motion:reduce){.hero-photo{animation:none}}
+  .hero-photo.has-img{border:none;padding:0}
+  .hero-photo.has-img img{width:100%;height:100%;object-fit:cover}
+  .hero-photo .ic{width:52px;height:52px;opacity:.55}
+  .hero-photo .cap{font-weight:900;color:var(--rose-ink);font-size:.95rem;max-width:22ch}
+  .hero-photo .ratio{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;font-weight:900;color:var(--rose-deep)}
+  .hero-quote{position:absolute;left:-14px;bottom:26px;background:#fff;border-radius:16px;
+    padding:.85rem 1.1rem;box-shadow:var(--shadow-m);max-width:230px;border-left:4px solid var(--rose);z-index:3}
+  .hero-quote .stars{color:var(--rose-ink);font-size:.9rem;letter-spacing:.06em}
+  .hero-quote p{font-size:.82rem;color:var(--ink-soft);line-height:1.45;margin-top:.2rem;font-style:italic}
+  .hero-stamp{position:absolute;top:-26px;right:-18px;width:104px;height:107px;
+    background:var(--vbstamp) center/contain no-repeat;z-index:4;
+    filter:drop-shadow(0 8px 18px rgba(60,30,20,.28));transform:rotate(6deg)}
+  @media(max-width:600px){.hero-stamp{width:82px;height:84px;top:-20px;right:-6px}}
+  @media(max-width:600px){.hero-quote{position:static;margin-top:1rem;max-width:none}}
+
+  /* ---- trust-strip ---- */
+  .trust{background:var(--ink);color:#fff}
+  .trust .wrap{display:grid;grid-template-columns:1fr 1fr;gap:.9rem 1.4rem;padding:1.3rem 24px}
+  @media(min-width:760px){.trust .wrap{grid-template-columns:repeat(4,1fr)}}
+  .trust-item{display:flex;align-items:center;gap:.65rem;font-weight:700;font-size:.93rem}
+  .trust-item svg{width:20px;height:20px;color:var(--rose);flex:none}
+
+  /* ---- secties ---- */
+  section{padding:clamp(3.4rem,7vw,6rem) 0}
+  .sec-head{max-width:60ch;margin-bottom:2.8rem}
+  .sec-head.center{margin-inline:auto;text-align:center}
+  .sec-head.center .eyebrow{justify-content:center}
+  .sec-head h2{margin:.7rem 0 .8rem}
+  .sec-head p{font-size:1.1rem;color:#4a4038}
+  .alt{background:var(--rose-wash)}
+
+  /* soft curved divider */
+  .divider{display:block;width:100%;height:60px;line-height:0}
+  .divider svg{width:100%;height:100%;display:block}
+
+  /* ---- proposities ---- */
+  .cards3{display:grid;gap:1.5rem}
+  @media(min-width:840px){.cards3{grid-template-columns:repeat(3,1fr)}}
+  .prop{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+    display:flex;flex-direction:column;box-shadow:var(--shadow-s);
+    transition:transform .22s var(--ease),box-shadow .22s var(--ease)}
+  .prop:hover{transform:translateY(-6px);box-shadow:var(--shadow-m)}
+  .prop-top{background:var(--rose);padding:1.7rem 1.5rem 1.4rem;display:flex;align-items:center;gap:1rem;position:relative;overflow:hidden}
+  .prop-top .roll-bg{position:absolute;right:-16px;bottom:-20px;width:88px;color:rgba(155,99,85,.22)}
+  .prop-top .badge{width:50px;height:50px;flex:none;border-radius:50%;background:#fff;
+    display:inline-flex;align-items:center;justify-content:center;border:2px solid var(--ink);position:relative;z-index:1}
+  .prop-top .badge svg{width:25px;height:25px;color:var(--ink)}
+  .prop-top h3{font-family:var(--font-display);font-size:1.3rem;color:var(--ink);line-height:1.12;position:relative;z-index:1}
+  .prop-body{padding:1.4rem 1.5rem 1.6rem;display:flex;flex-direction:column;flex:1}
+  .prop-body p{font-size:.98rem;color:#4a4038;margin-bottom:1.1rem}
+  .prop-body ul{list-style:none;margin:0 0 1.4rem;display:flex;flex-direction:column;gap:.55rem}
+  .prop-body li{position:relative;padding-left:1.7rem;font-size:.95rem;font-weight:700;color:var(--ink-soft)}
+  .prop-body li::before{content:"";position:absolute;left:0;top:.15em;width:17px;height:17px;
+    background:var(--rose);border-radius:50%;box-shadow:inset 0 0 0 3px #fff}
+  .prop-body .btn{margin-top:auto;align-self:flex-start}
+
+  /* ---- merkwaarden ---- */
+  .values{display:grid;gap:1.5rem}
+  @media(min-width:760px){.values{grid-template-columns:repeat(3,1fr)}}
+  .value{padding:1.8rem 1.6rem;border-radius:var(--r);background:#fff;border:1px solid var(--line);position:relative}
+  .value .vnum{font-family:var(--font-display);font-size:1.3rem;color:var(--rose-ink);margin-bottom:.6rem;
+    display:inline-flex;align-items:center;gap:.5rem}
+  .value .vnum .roll{color:var(--rose-deep)}
+  .value h3{font-family:var(--font-display);font-size:1.35rem;color:var(--ink);margin-bottom:.5rem}
+  .value p{font-size:.97rem;color:#4a4038}
+
+  /* ---- werkwijze ---- */
+  .steps{display:grid;gap:1.4rem;counter-reset:step}
+  @media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+  .step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.7rem 1.4rem;position:relative;box-shadow:var(--shadow-s)}
+  .step::before{counter-increment:step;content:counter(step);
+    font-family:var(--font-display);font-size:1.5rem;color:var(--ink);
+    width:48px;height:48px;border-radius:50%;background:var(--rose);
+    display:inline-flex;align-items:center;justify-content:center;margin-bottom:1rem}
+  .step h3{font-family:var(--font-body);font-weight:900;font-size:1.08rem;margin-bottom:.45rem;color:var(--ink)}
+  .step p{font-size:.93rem;color:#4a4038}
+
+  /* ---- menu ---- */
+  .menu-grid{display:grid;gap:1.5rem}
+  @media(min-width:760px){.menu-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1000px){.menu-grid{grid-template-columns:repeat(3,1fr)}}
+  .menu-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);
+    padding:0;overflow:hidden;box-shadow:var(--shadow-s);transition:transform .2s var(--ease),box-shadow .2s var(--ease);
+    display:flex;flex-direction:column}
+  .menu-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-m)}
+  .menu-card .mc-photo{aspect-ratio:4/3;overflow:hidden;background:#111}
+  .menu-card .mc-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s var(--ease)}
+  .menu-card:hover .mc-photo img{transform:scale(1.04)}
+  .menu-card .mc-body{padding:1.5rem 1.6rem 1.7rem;display:flex;flex-direction:column;flex:1}
+  .menu-card .mc-head{display:flex;align-items:center;gap:.6rem;margin-bottom:.2rem}
+  .menu-card .mc-head .roll{color:var(--rose-deep)}
+  .menu-card h3{font-family:var(--font-display);font-size:1.32rem;color:var(--ink)}
+  .menu-card .from{font-weight:900;color:var(--rose-ink);font-size:.9rem;margin-bottom:1rem}
+  .menu-card ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+  .menu-card li{font-size:.95rem;color:#4a4038;padding-left:1.4rem;position:relative;font-weight:400}
+  .menu-card li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border-radius:50%;background:var(--rose-deep)}
+  .menu-note{margin-top:2.2rem;text-align:center;font-size:.98rem;color:#5a5048;max-width:62ch;margin-inline:auto}
+
+  /* ---- proeflunch-CTA (signatuurmoment) ---- */
+  .proef{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+  .proef .roll-xl{position:absolute;right:-40px;top:50%;transform:translateY(-50%);width:280px;color:rgba(225,183,171,.14);z-index:0}
+  .proef .wrap{position:relative;z-index:2;display:grid;gap:1.6rem;align-items:center;text-align:center}
+  @media(min-width:820px){.proef .wrap{grid-template-columns:1.2fr auto;text-align:left}}
+  .proef .eyebrow{color:var(--rose)}
+  .proef .eyebrow::before{background:var(--rose)}
+  .proef h2{color:#fff;margin:.5rem 0 .6rem}
+  .proef p{color:rgba(255,255,255,.82);font-size:1.1rem;max-width:48ch}
+
+  .trust-cards{display:grid;gap:1.5rem;margin-top:.5rem}
+  @media(min-width:820px){.trust-cards{grid-template-columns:repeat(3,1fr)}}
+  .trust-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:2rem 1.6rem;
+    text-align:center;box-shadow:var(--shadow-s)}
+  .tc-num{font-family:var(--font-display);font-size:clamp(2.6rem,6vw,3.4rem);color:var(--ink);line-height:1}
+  .tc-num span{color:var(--rose-ink)}
+  .tc-lbl{font-weight:700;font-size:.96rem;color:#4a4038;margin-top:.7rem}
+  .review-note{text-align:center;font-size:.9rem;color:#8a7a72;margin-top:1.4rem}
+
+  /* ---- stats / cijfers met count-up ---- */
+  .stats{background:var(--rose)}
+  .stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.8rem 1rem;text-align:center}
+  @media(min-width:760px){.stats-grid{grid-template-columns:repeat(4,1fr)}}
+  .stat .num{font-family:var(--font-display);font-size:clamp(2.4rem,6vw,3.4rem);color:var(--ink);line-height:1}
+  .stat .lbl{font-weight:700;font-size:.95rem;color:#4a2c24;margin-top:.5rem}
+
+  /* ---- doelgroep ---- */
+  .aud-strip{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin-top:.5rem}
+  .aud{background:#fff;border:1px solid var(--line);border-radius:999px;padding:.6rem 1.2rem;
+    font-weight:700;font-size:.93rem;display:inline-flex;align-items:center;gap:.5em;box-shadow:var(--shadow-s)}
+  .aud svg{width:17px;height:17px;color:var(--rose-ink)}
+
+  /* ---- herkomst / Boslaantje Doen ---- */
+  .origin{background:var(--rose-wash)}
+  .origin .wrap{display:grid;gap:1.6rem;align-items:center;text-align:center}
+  @media(min-width:820px){.origin .wrap{grid-template-columns:auto 1fr;text-align:left;gap:2.4rem}}
+  .origin .bd-badge{width:150px;height:70px;background:var(--logo) center/contain no-repeat;margin-inline:auto}
+  .origin h2{font-size:clamp(1.5rem,3.4vw,2.1rem);margin-bottom:.6rem}
+  .origin p{font-size:1.06rem;color:#4a4038;max-width:56ch}
+
+  /* ---- bestellen ---- */
+  .order-grid{display:grid;gap:2.6rem;align-items:start}
+  @media(min-width:920px){.order-grid{grid-template-columns:1.05fr .95fr}}
+  .form{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.9rem 1.9rem 2rem;box-shadow:var(--shadow-m)}
+  .form h3{font-family:var(--font-display);font-size:1.45rem;color:var(--ink);margin-bottom:.3rem}
+  .form .sub{font-size:.95rem;color:#5a5048;margin-bottom:1.4rem}
+  .field{margin-bottom:1.05rem}
+  .field label{display:block;font-weight:700;font-size:.9rem;margin-bottom:.35rem;color:var(--ink)}
+  .field input,.field select,.field textarea{width:100%;font-family:var(--font-body);font-size:1rem;color:var(--ink);
+    padding:.8em .95em;border:1.5px solid var(--line);border-radius:12px;background:var(--rose-wash);
+    transition:border-color .15s,background .15s}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--rose-deep);background:#fff}
+  .field textarea{min-height:100px;resize:vertical}
+  .form .btn{width:100%;justify-content:center;margin-top:.5rem}
+  .form-note{font-size:.82rem;color:#6a6058;margin-top:1rem;text-align:center}
+  .field .req{color:var(--rose-ink)}
+  .field .err{display:none;color:#b23b2e;font-size:.82rem;font-weight:700;margin-top:.35rem}
+  .field.invalid input,.field.invalid select{border-color:#b23b2e;background:#fdf3f1}
+  .field.invalid .err{display:block}
+  .form-success{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:2.4rem 1.9rem;
+    box-shadow:var(--shadow-m);text-align:center}
+  .form-success .fs-ic{width:64px;height:64px;border-radius:50%;background:var(--rose);color:var(--ink);
+    display:inline-flex;align-items:center;justify-content:center;margin-bottom:1rem}
+  .form-success .fs-ic svg{width:32px;height:32px}
+  .form-success h3{font-family:var(--font-display);font-size:1.5rem;color:var(--ink);margin-bottom:.5rem}
+  .form-success p{color:#4a4038;max-width:36ch;margin-inline:auto}
+
+  .contact-side .contact-block{margin-bottom:1.5rem}
+  .contact-side .lbl{font-size:.72rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-ink);margin-bottom:.28rem}
+  .contact-side .big{font-size:1.2rem;font-weight:900;color:var(--ink)}
+  .contact-side a.big:hover{color:var(--rose-ink)}
+  .contact-side .area{background:var(--rose-wash);border-radius:14px;padding:1.1rem 1.2rem;font-size:.94rem;color:#4a4038;border-left:4px solid var(--rose)}
+  .contact-side .btn{margin-top:.3rem}
+
+  /* twee bestelpaden */
+  .bestel-paths{display:grid;gap:1.4rem;margin-bottom:2.6rem}
+  @media(min-width:760px){.bestel-paths{grid-template-columns:1fr 1fr}}
+  .bestel-card{border-radius:var(--r);padding:1.7rem 1.7rem 1.8rem;display:flex;flex-direction:column;
+    box-shadow:var(--shadow-s);border:1px solid var(--line)}
+  .bestel-card .bc-ic{width:48px;height:48px;border-radius:50%;display:inline-flex;align-items:center;
+    justify-content:center;margin-bottom:1rem}
+  .bestel-card .bc-ic svg{width:24px;height:24px}
+  .bestel-card h3{font-family:var(--font-display);font-size:1.35rem;color:var(--ink);margin-bottom:.4rem;line-height:1.15}
+  .bestel-card p{font-size:.97rem;color:#4a4038;margin-bottom:1.2rem;flex:1}
+  .bestel-card .bc-meta{font-size:.85rem;font-weight:700;color:var(--rose-ink);margin-bottom:1rem}
+  .bestel-card.now{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .bestel-card.now h3{color:#fff}
+  .bestel-card.now p{color:rgba(255,255,255,.82)}
+  .bestel-card.now .bc-ic{background:var(--rose)}
+  .bestel-card.now .bc-ic svg{color:var(--ink)}
+  .bestel-card.now .bc-meta{color:var(--rose)}
+  .bestel-card.plan{background:var(--rose-wash)}
+  .bestel-card.plan .bc-ic{background:var(--rose)}
+  .bestel-card.plan .bc-ic svg{color:var(--ink)}
+  .bestel-card .btn{align-self:flex-start}
+
+  /* ---- footer ---- */
+  footer{background:var(--ink);color:#fff;padding:3.2rem 0 2rem}
+  .foot-grid{display:grid;gap:2rem;margin-bottom:2.4rem}
+  @media(min-width:760px){.foot-grid{grid-template-columns:1.6fr 1fr 1fr}}
+  .foot-brand .foot-vb{display:block;width:210px;max-width:74%;height:auto;aspect-ratio:261/153;
+    background:var(--vbwhite) left center/contain no-repeat;margin-bottom:1rem}
+  .foot-brand p{color:rgba(255,255,255,.72);max-width:34ch;font-size:.95rem}
+  .foot-parent{margin-top:1.2rem;display:inline-flex;align-items:center;gap:.55rem;font-size:.86rem;color:rgba(255,255,255,.8)}
+  .foot-parent .bd-logo{height:18px;width:50px;background:var(--logo) left center/contain no-repeat;filter:invert(1);display:inline-block}
+  .foot-parent a{text-decoration:underline;text-underline-offset:2px;font-weight:700}
+  .foot-parent a:hover{color:var(--rose)}
+  .foot-socials{display:flex;gap:.6rem;margin-top:1.2rem}
+  .foot-socials a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;
+    border-radius:50%;border:1.5px solid rgba(255,255,255,.35);color:#fff;
+    transition:background .15s,color .15s,border-color .15s,transform .15s}
+  .foot-socials a svg{width:20px;height:20px}
+  .foot-socials a:hover{background:var(--rose);color:var(--ink);border-color:var(--rose);transform:translateY(-2px)}
+  .foot-col h4{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);margin-bottom:.9rem;font-weight:900}
+  .foot-col a{display:block;color:rgba(255,255,255,.82);padding:.28rem 0;font-weight:600;font-size:.95rem}
+  .foot-col a:hover{color:#fff}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.16);padding-top:1.5rem;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between;font-size:.84rem;color:rgba(255,255,255,.6)}
+  .foot-bottom .tagline{color:var(--rose)}
+  .foot-legal{border-top:1px solid rgba(255,255,255,.16);padding-top:1.4rem;margin-top:.4rem;
+    display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;font-size:.8rem;color:rgba(255,255,255,.5)}
+  .foot-bottom a{color:rgba(255,255,255,.7);text-decoration:underline;text-underline-offset:2px}
+  .foot-bottom a:hover{color:var(--rose)}
+
+  /* ---- scroll-reveal met stagger ---- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+  .seo{background:var(--rose-wash);padding:2.6rem 0}
+  .seo p{max-width:78ch;margin:0 auto;text-align:center;font-size:.94rem;line-height:1.7;color:#5a5048}
+</style>
+</head>
+<body>
+
+<!-- ============ merkband: onderdeel van Boslaantje Doen ============ -->
+<div class="parent-bar">
+  <span>Onderdeel van</span>
+  <span class="bd-logo" role="img" aria-label="Boslaantje Doen"></span>
+  <span>·</span>
+  <a href="https://www.boslaantjedoen.nl/">Terug naar Boslaantje Doen</a>
+</div>
+
+<!-- ============ header ============ -->
+<header id="header">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Vers en Belegd, naar boven">
+      <span class="vb-mark" role="img" aria-label="Vers en Belegd logo"></span>
+      <span class="name">Vers &amp; Belegd</span>
+    </a>
+    <nav class="nav-links" aria-label="Hoofdmenu Vers en Belegd">
+      <a href="#zakelijk">Zakelijke lunch</a>
+      <a href="#vergader">Vergaderlunch</a>
+      <a href="#scholen">Scholen</a>
+      <a href="#menu">Menu</a>
+      <a href="https://www.versenbelegd.nl/bestel" target="_blank" rel="noopener">Direct bestellen</a>
+    </nav>
+    <a href="#bestellen" class="btn btn-primary">Vraag een voorstel</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobiel hoofdmenu" hidden>
+    <a href="#zakelijk">Zakelijke lunch</a>
+    <a href="#vergader">Vergaderlunch</a>
+    <a href="#scholen">Scholen &amp; opleidingen</a>
+    <a href="#menu">Menu</a>
+    <a href="https://www.versenbelegd.nl/bestel" target="_blank" rel="noopener">Direct bestellen</a>
+    <a href="#bestellen" class="btn btn-primary mobile-order">Vraag een voorstel</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ============ hero ============ -->
+<section class="hero" id="home">
+  <span class="hero-orb a" aria-hidden="true"></span>
+  <span class="hero-orb b" aria-hidden="true"></span>
+  <span class="hero-roll" aria-hidden="true">
+    <svg viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 24h52a10 10 0 0 1-10 10H16A10 10 0 0 1 6 24z"/><path d="M10 24c0-6 5-10 22-10s22 4 22 10"/><path d="M20 15c.5-2 2.5-3.2 6-3.2M32 12c.5-2 2.5-3.2 6-3.2"/></svg>
+  </span>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-inner">
+        <span class="eyebrow">Zakelijke lunch · Veenendaal e.o.</span>
+        <h1>De vaste lunchpartner voor Veenendaal en omgeving</h1>
+        <p class="lead">Verse broodjes, vergaderlunch en dagelijkse bedrijfslunch — altijd op tijd, altijd persoonlijk. Met een vast contact dat je organisatie kent.</p>
+        <div class="hero-cta">
+          <a href="#bestellen" class="btn btn-primary">Vraag een lunchvoorstel</a>
+          <a href="https://www.versenbelegd.nl/bestel" target="_blank" rel="noopener" class="btn btn-outline">Direct online bestellen</a>
+        </div>
+      </div>
+      <div class="hero-card reveal">
+        <div class="hero-photo has-img">
+          <img src="images/hero.webp" alt="Luxe belegde broodjes van Vers en Belegd, vers klaargemaakt op schaal" width="1400" height="1400" fetchpriority="high" decoding="async">
+        </div>
+        <span class="hero-stamp" role="img" aria-label="Vers en Belegd"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ trust-strip (cijfers) ============ -->
+<section class="trust" style="padding:0">
+  <div class="wrap">
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Reactie binnen 1 werkdag</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Bezorging in Veenendaal e.o.</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Van 5 tot 150 personen</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Dagelijks vers bereid</div>
+  </div>
+</section>
+
+<!-- ============ proposities ============ -->
+<section id="proposities" class="alt">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Drie manieren waarop we je helpen</span>
+      <h2>Lunch die past bij jouw organisatie</h2>
+      <p>Of het nu gaat om de dagelijkse lunch op kantoor, een vergadering of een volle trainingszaal — vertel ons wat je nodig hebt, wij regelen de lunch.</p>
+    </div>
+    <div class="cards3">
+
+      <article class="prop reveal" id="zakelijk">
+        <div class="prop-top">
+          <span class="roll-bg" aria-hidden="true"><svg viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 24h52a10 10 0 0 1-10 10H16A10 10 0 0 1 6 24z"/><path d="M10 24c0-6 5-10 22-10s22 4 22 10"/></svg></span>
+          <span class="badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></span>
+          <h3>Zakelijke lunch</h3>
+        </div>
+        <div class="prop-body">
+          <p>De vaste, dagelijkse lunch voor je medewerkers. Wij leveren consequent op tijd, zodat jij er niet meer aan hoeft te denken.</p>
+          <ul>
+            <li>Dagelijks of op vaste dagen</li>
+            <li>Verse broodjes, salades &amp; soep</li>
+            <li>Eén vaste contactpersoon</li>
+          </ul>
+          <a href="#bestellen" class="btn btn-rose">Vraag een voorstel</a>
+        </div>
+      </article>
+
+      <article class="prop reveal" id="vergader">
+        <div class="prop-top">
+          <span class="roll-bg" aria-hidden="true"><svg viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 24h52a10 10 0 0 1-10 10H16A10 10 0 0 1 6 24z"/><path d="M10 24c0-6 5-10 22-10s22 4 22 10"/></svg></span>
+          <span class="badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h18"/><path d="M6 7v13h12V7"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/></svg></span>
+          <h3>Vergaderlunch</h3>
+        </div>
+        <div class="prop-body">
+          <p>Een nette, verzorgde lunch voor je overleg, training of bijeenkomst. Mooi opgemaakt en klaar om te serveren als je gasten arriveren.</p>
+          <ul>
+            <li>Van 5 tot 150 personen</li>
+            <li>Luxe belegde broodjes &amp; wraps</li>
+            <li>Compleet met fruit &amp; drinken</li>
+          </ul>
+          <a href="#bestellen" class="btn btn-rose">Plan een vergaderlunch</a>
+        </div>
+      </article>
+
+      <article class="prop reveal" id="scholen">
+        <div class="prop-top">
+          <span class="roll-bg" aria-hidden="true"><svg viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 24h52a10 10 0 0 1-10 10H16A10 10 0 0 1 6 24z"/><path d="M10 24c0-6 5-10 22-10s22 4 22 10"/></svg></span>
+          <span class="badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg></span>
+          <h3>Scholen &amp; opleidingen</h3>
+        </div>
+        <div class="prop-body">
+          <p>Structurele lunch voor cursisten, studenten en gasten. Betrouwbaar geleverd, ook als de aantallen per dag verschillen.</p>
+          <ul>
+            <li>Wisselende aantallen? Geen probleem</li>
+            <li>Vaste levertijden rond de les</li>
+            <li>Duidelijke afspraken &amp; facturatie</li>
+          </ul>
+          <a href="#bestellen" class="btn btn-rose">Vraag de mogelijkheden</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ merkwaarden ============ -->
+<section id="waarom">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Waarom Vers &amp; Belegd</span>
+      <h2>Geen leverancier, maar een partner</h2>
+      <p>Waar anderen alleen leveren, denken wij mee. We kennen onze klanten, houden de lijnen kort en zorgen elke dag opnieuw voor kwaliteit waar je op kunt bouwen.</p>
+    </div>
+    <div class="values">
+      <div class="value reveal">
+        <span class="vnum"><span class="roll" aria-hidden="true"><svg width="26" height="18" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 24h52a10 10 0 0 1-10 10H16A10 10 0 0 1 6 24z"/><path d="M10 24c0-6 5-10 22-10s22 4 22 10"/></svg></span></span>
+        <h3>Persoonlijk</h3>
+        <p>We kennen je organisatie en denken actief mee. Geen anonieme service, maar een partner die weet wat je nodig hebt.</p>
+      </div>
+      <div class="value reveal">
+        <span class="vnum"><span class="roll" aria-hidden="true"><svg width="26" height="18" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 24h52a10 10 0 0 1-10 10H16A10 10 0 0 1 6 24z"/><path d="M10 24c0-6 5-10 22-10s22 4 22 10"/></svg></span></span>
+        <h3>Betrouwbaar</h3>
+        <p>Afspraak is afspraak. We leveren altijd op tijd en zorgen voor constante kwaliteit. Daar kun je op rekenen, iedere keer opnieuw.</p>
+      </div>
+      <div class="value reveal">
+        <span class="vnum"><span class="roll" aria-hidden="true"><svg width="26" height="18" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 24h52a10 10 0 0 1-10 10H16A10 10 0 0 1 6 24z"/><path d="M10 24c0-6 5-10 22-10s22 4 22 10"/></svg></span></span>
+        <h3>Lokaal</h3>
+        <p>We zijn geworteld in Veenendaal en omgeving. Geen landelijke keten, maar een lokale specialist die betrokken is bij de regio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- soft divider naar werkwijze -->
+<div class="divider" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#faf1ec" d="M0,60 L0,28 C240,4 480,4 720,20 C960,36 1200,44 1440,20 L1440,60 Z"></path></svg></div>
+
+<!-- ============ werkwijze ============ -->
+<section class="alt" style="padding-top:1rem">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Zo werkt het</span>
+      <h2>Lunch regelen in vier stappen</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Vertel wat je nodig hebt</h3><p>Aantal personen, vaste dagen of eenmalig, en eventuele wensen. Even bellen of het formulier invullen.</p></div>
+      <div class="step reveal"><h3>Je krijgt een voorstel</h3><p>Wij maken een helder voorstel op maat, inclusief prijs en levertijd. Zonder verplichtingen.</p></div>
+      <div class="step reveal"><h3>We leveren op tijd</h3><p>Vers klaargemaakt en bezorgd op het afgesproken tijdstip. Klaar om te serveren.</p></div>
+      <div class="step reveal"><h3>Eén vaste lijn</h3><p>Vragen of wijzigen? Je hebt één vast contact die je kent. Kort en persoonlijk.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ menu ============ -->
+<section id="menu">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Ons lunchaanbod</span>
+      <h2>Vers, gevarieerd en verzorgd</h2>
+      <p>Een greep uit wat we voor je klaarmaken. Alles is aan te passen aan je organisatie, dieetwensen en budget.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-card reveal">
+        <div class="mc-photo"><img src="images/menu-broodjes.webp" alt="Vers belegd stokbroodje met brie, tomaat en komkommer" width="760" height="570" loading="lazy" decoding="async"></div>
+        <div class="mc-body">
+          <div class="mc-head"><span class="roll" aria-hidden="true"><svg width="26" height="18" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 24h52a10 10 0 0 1-10 10H16A10 10 0 0 1 6 24z"/><path d="M10 24c0-6 5-10 22-10s22 4 22 10"/></svg></span><h3>Belegde broodjes</h3></div>
+          <div class="from">vanaf € 4,50 p.s.</div>
+          <ul>
+          <li>Kaas, ham, ei &amp; kip vanaf € 4,50</li>
+          <li>Rosbief, brie, gezond vanaf € 5,95</li>
+          <li>Gerookte zalm &amp; carpaccio € 6,50</li>
+          <li>Keuze uit wit, bruin, meergranen, spelt of glutenvrij</li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-card reveal">
+        <div class="mc-photo"><img src="images/menu-schotels.webp" alt="Ruime schaal met verse belegde broodjes en fruit" width="760" height="570" loading="lazy" decoding="async"></div>
+        <div class="mc-body">
+          <div class="mc-head"><span class="roll" aria-hidden="true"><svg width="26" height="18" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 24h52a10 10 0 0 1-10 10H16A10 10 0 0 1 6 24z"/><path d="M10 24c0-6 5-10 22-10s22 4 22 10"/></svg></span><h3>Vergaderschotels <span style="font-size:.7rem;font-weight:700;color:var(--rose-ink)">5+ pers.</span></h3></div>
+          <div class="from">vanaf € 8,95 p.p.</div>
+          <ul>
+          <li>Basic, Standaard of Luxe</li>
+          <li>Mix van verse belegde broodjes</li>
+          <li>Inclusief sap of zuivel</li>
+          <li>Mooi opgemaakt op schaal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-card reveal">
+        <div class="mc-photo"><img src="images/menu-lunchtasjes.webp" alt="Vers en Belegd lunchtasje met broodjes, fruit en drinken" width="760" height="570" loading="lazy" decoding="async"></div>
+        <div class="mc-body">
+          <div class="mc-head"><span class="roll" aria-hidden="true"><svg width="26" height="18" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 24h52a10 10 0 0 1-10 10H16A10 10 0 0 1 6 24z"/><path d="M10 24c0-6 5-10 22-10s22 4 22 10"/></svg></span><h3>Lunchtasjes <span style="font-size:.7rem;font-weight:700;color:var(--rose-ink)">5+ pers.</span></h3></div>
+          <div class="from">vanaf € 8,50 p.p.</div>
+          <ul>
+          <li>Individueel verpakt per persoon</li>
+          <li>Basic, Standaard of Luxe</li>
+          <li>Inclusief drinken en (bij Luxe) vers fruit</li>
+          <li>Ideaal voor onderweg of een cursus</li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-card reveal">
+        <div class="mc-photo"><img src="images/menu-salades.webp" alt="Vers fruit in een schaaltje: meloen, druiven, kiwi en appel" width="760" height="570" loading="lazy" decoding="async"></div>
+        <div class="mc-body">
+          <div class="mc-head"><span class="roll" aria-hidden="true"><svg width="26" height="18" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 24h52a10 10 0 0 1-10 10H16A10 10 0 0 1 6 24z"/><path d="M10 24c0-6 5-10 22-10s22 4 22 10"/></svg></span><h3>Salades &amp; vers fruit</h3></div>
+          <div class="from">vanaf € 2,95</div>
+          <ul>
+          <li>Maaltijdsalades: kip-truffel € 8,95</li>
+          <li>Carpaccio € 9,95 · gerookte zalm € 10,95</li>
+          <li>Vers fruitsalade of stuk fruit</li>
+          <li>Dagvers en rijk gevuld</li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-card reveal">
+        <div class="mc-photo"><img src="images/menu-mini.webp" alt="Schaal met verschillende luxe belegde mini-broodjes" width="760" height="570" loading="lazy" decoding="async"></div>
+        <div class="mc-body">
+          <div class="mc-head"><span class="roll" aria-hidden="true"><svg width="26" height="18" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 24h52a10 10 0 0 1-10 10H16A10 10 0 0 1 6 24z"/><path d="M10 24c0-6 5-10 22-10s22 4 22 10"/></svg></span><h3>Mini broodjes-schotels</h3></div>
+          <div class="from">vanaf € 27,50</div>
+          <ul>
+          <li>10 stuks € 27,50</li>
+          <li>20 stuks € 55,00</li>
+          <li>30 stuks € 82,50</li>
+          <li>Perfect voor borrel of receptie</li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-card reveal">
+        <div class="mc-photo"><img src="images/menu-smoothie.webp" alt="Verse rode smoothie met Vers en Belegd label" width="760" height="570" loading="lazy" decoding="async"></div>
+        <div class="mc-body">
+          <div class="mc-head"><span class="roll" aria-hidden="true"><svg width="26" height="18" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 24h52a10 10 0 0 1-10 10H16A10 10 0 0 1 6 24z"/><path d="M10 24c0-6 5-10 22-10s22 4 22 10"/></svg></span><h3>Warme snacks, wraps &amp; meer</h3></div>
+          <div class="from">vanaf € 3,25</div>
+          <ul>
+          <li>Broodje kroket of frikandel vanaf € 3,25</li>
+          <li>Wraps (joppie, pesto, spicy) € 5,50</li>
+          <li>Verse smoothies € 3,95</li>
+          <li>Dranken, sappen &amp; zuivel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="menu-note">Dit is een greep uit het aanbod; genoemde prijzen zijn indicatief. Bekijk het <strong>volledige, actuele menu</strong> met alle prijzen in de webshop en bestel direct online — afhalen of bezorgen.</p>
+    <div style="text-align:center;margin-top:1.4rem">
+      <a href="https://www.versenbelegd.nl/menu" target="_blank" rel="noopener" class="btn btn-rose">Bekijk &amp; bestel het volledige menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ proeflunch-CTA ============ -->
+<section class="proef">
+  <span class="roll-xl" aria-hidden="true"><svg viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 24h52a10 10 0 0 1-10 10H16A10 10 0 0 1 6 24z"/><path d="M10 24c0-6 5-10 22-10s22 4 22 10"/><path d="M20 15c.5-2 2.5-3.2 6-3.2M32 12c.5-2 2.5-3.2 6-3.2"/></svg></span>
+  <div class="wrap reveal">
+    <div>
+      <span class="eyebrow">Zonder verplichtingen</span>
+      <h2>Plan een proeflunch</h2>
+      <p>Benieuwd of we bij je organisatie passen? We komen graag langs met een proeflunch, zodat je zelf proeft wat je mag verwachten. Kosteloos en vrijblijvend.</p>
+    </div>
+    <div><a href="#bestellen" class="btn btn-light">Plan een proeflunch</a></div>
+  </div>
+</section>
+
+<!-- ============ vertrouwen / staat van dienst (eerlijke tussenvorm) ============
+     LET OP: hier komen straks ECHTE klantquotes. Vervang het onderstaande
+     trust-blok zodra je 3 quotes (naam + organisatie) hebt aangeleverd. -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Waarom organisaties voor ons kiezen</span>
+      <h2>Betrouwbaar, vers en lokaal — dag in, dag uit</h2>
+      <p>We laten liever zien wat we doen dan dat we grote woorden gebruiken. Dit is waar organisaties in de regio op rekenen.</p>
+    </div>
+    <div class="trust-cards reveal">
+      <div class="trust-card">
+        <div class="tc-num">20<span>+</span></div>
+        <div class="tc-lbl">jaar horeca-ervaring via Boslaantje Doen in Veenendaal</div>
+      </div>
+      <div class="trust-card">
+        <div class="tc-num">9</div>
+        <div class="tc-lbl">plaatsen in ons bezorggebied — van Veenendaal tot Ede en Rhenen</div>
+      </div>
+      <div class="trust-card">
+        <div class="tc-num">100<span>%</span></div>
+        <div class="tc-lbl">dagelijks vers bereid, met een vaste contactpersoon</div>
+      </div>
+    </div>
+    <p class="review-note">Klantervaringen volgen binnenkort op deze plek.</p>
+  </div>
+</section>
+
+<!-- ============ cijfers / stats ============ -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stats-grid reveal">
+      <div class="stat"><div class="num" data-count="20" data-suffix="+">0</div><div class="lbl">jaar Boslaantje Doen in Veenendaal</div></div>
+      <div class="stat"><div class="num" data-count="150" data-prefix="5–">0</div><div class="lbl">personen per lunch</div></div>
+      <div class="stat"><div class="num" data-count="1" data-suffix=" werkdag">0</div><div class="lbl">reactietijd op je aanvraag</div></div>
+      <div class="stat"><div class="num" data-count="100" data-suffix="%">0</div><div class="lbl">dagelijks vers bereid</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ doelgroep ============ -->
+<section id="doelgroep">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Voor wie we klaarstaan</span>
+      <h2>Van kantoren tot klaslokalen</h2>
+      <p>Organisaties in Veenendaal en omgeving rekenen op ons voor hun dagelijkse lunch.</p>
+    </div>
+    <div class="aud-strip reveal">
+      <span class="aud"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/></svg> Bedrijven</span>
+      <span class="aud"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10L12 5 2 10l10 5 10-5z"/></svg> Scholen</span>
+      <span class="aud"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18M6 7v13h12V7"/></svg> Opleidingen</span>
+      <span class="aud"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg> Trainingslocaties</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ herkomst: Boslaantje Doen ============ -->
+<section class="origin">
+  <div class="wrap reveal">
+    <span class="bd-badge" role="img" aria-label="Boslaantje Doen"></span>
+    <div>
+      <span class="eyebrow">Een vertrouwd fundament</span>
+      <h2>Een initiatief van Boslaantje Doen</h2>
+      <p>Vers &amp; Belegd komt voort uit Boslaantje Doen — al meer dan 20 jaar een vertrouwd begrip in Veenendaal. Diezelfde ervaring, kwaliteit en lokale betrokkenheid brengen we nu naar de zakelijke lunch.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ bestellen / offerte ============ -->
+<section id="bestellen">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Bestellen &amp; aanvragen</span>
+      <h2>Twee manieren om te bestellen</h2>
+      <p>Snel iets nodig? Bestel direct online. Zoek je een vaste lunchafspraak voor je organisatie? Vraag een voorstel op maat.</p>
+    </div>
+
+    <div class="bestel-paths reveal">
+      <a class="bestel-card now" href="https://www.versenbelegd.nl/bestel" target="_blank" rel="noopener">
+        <span class="bc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.5a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.5L22 7H6"/></svg></span>
+        <h3>Direct online bestellen</h3>
+        <p>Broodjes, vergaderschotels, lunchtasjes en meer — vandaag geregeld via onze webshop.</p>
+        <span class="bc-meta">Afhalen &amp; bezorgen · 09:00–14:00</span>
+        <span class="btn btn-light">Naar de webshop →</span>
+      </a>
+      <div class="bestel-card plan">
+        <span class="bc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 2v4M16 2v4M3 9h18"/><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 14h3M8 17h6"/></svg></span>
+        <h3>Vaste lunchafspraak</h3>
+        <p>Elke week verse lunch op vaste dagen voor je bedrijf, school of locatie? Vraag een voorstel op maat — dan regelen we het samen, met een vast contact.</p>
+        <span class="bc-meta">Voorstel binnen 1 werkdag · vrijblijvend</span>
+        <a href="#voorstel" class="btn btn-primary">Vraag een voorstel</a>
+      </div>
+    </div>
+
+    <div class="sec-head reveal" id="voorstel" style="max-width:60ch;margin-top:1rem">
+      <span class="eyebrow">Voorstel op maat</span>
+      <h2>Vertel ons wat je nodig hebt. Wij regelen de lunch.</h2>
+      <p>Voor vaste afspraken en grotere bestellingen maken we een helder voorstel op maat — inclusief prijs en levertijd.</p>
+    </div>
+    <div class="order-grid">
+      <div class="reveal">
+        <form class="form" id="lunchForm" action="https://formspree.io/f/JOUW_FORM_ID" method="POST" novalidate>
+          <h3>Vraag je voorstel aan</h3>
+          <p class="sub">Geen verplichtingen. Je krijgt binnen één werkdag een reactie van ons.</p>
+          <div class="field">
+            <label for="org">Organisatie <span class="req">*</span></label>
+            <input id="org" name="organisatie" type="text" autocomplete="organization" placeholder="Bedrijf, school of locatie" required>
+            <span class="err" data-for="org"></span>
+          </div>
+          <div class="field">
+            <label for="naam">Je naam <span class="req">*</span></label>
+            <input id="naam" name="naam" type="text" autocomplete="name" placeholder="Voor- en achternaam" required>
+            <span class="err" data-for="naam"></span>
+          </div>
+          <div class="field">
+            <label for="email">E-mailadres <span class="req">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="jij@organisatie.nl" required>
+            <span class="err" data-for="email"></span>
+          </div>
+          <div class="field">
+            <label for="tel">Telefoon <span style="font-weight:400;color:#8a7a72">(optioneel)</span></label>
+            <input id="tel" name="telefoon" type="tel" autocomplete="tel" placeholder="Zodat we snel kunnen schakelen">
+          </div>
+          <div class="field">
+            <label for="soort">Waar kan ik je mee helpen? <span class="req">*</span></label>
+            <select id="soort" name="soort" required>
+              <option value="">Kies een optie</option>
+              <option>Dagelijkse zakelijke lunch</option>
+              <option>Vergaderlunch (eenmalig)</option>
+              <option>Scholen &amp; opleidingen</option>
+              <option>Een proeflunch inplannen</option>
+              <option>Iets anders</option>
+            </select>
+            <span class="err" data-for="soort"></span>
+          </div>
+          <div class="field">
+            <label for="bericht">Vertel het ons</label>
+            <textarea id="bericht" name="bericht" placeholder="Bijvoorbeeld: rond de 20 personen, elke dinsdag en donderdag, vanaf volgende maand."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">Verstuur je aanvraag</button>
+          <p class="form-note">We gebruiken je gegevens alleen om je aanvraag te beantwoorden. Zie onze <a href="privacy.html" style="color:var(--rose-ink);font-weight:700">privacyverklaring</a>.</p>
+          <p class="form-note">Liever mailen? <a href="mailto:info@versenbelegd.nl" style="color:var(--rose-ink);font-weight:700">info@versenbelegd.nl</a></p>
+        </form>
+        <div class="form-success" id="formSuccess" hidden role="status">
+          <div class="fs-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <h3>Bedankt voor je aanvraag!</h3>
+          <p>We hebben je bericht ontvangen en nemen binnen één werkdag contact met je op. Tot snel.</p>
+        </div>
+      </div>
+      <div class="contact-side reveal">
+        <div class="contact-block">
+          <div class="lbl">Liever direct bestellen?</div>
+          <a class="big" href="https://www.versenbelegd.nl/bestel" target="_blank" rel="noopener">Naar de webshop</a>
+          <p style="font-size:.9rem;color:#5a5048;margin-top:.3rem">Afhalen &amp; bezorgen · 09:00–14:00</p>
+        </div>
+        <div class="contact-block">
+          <div class="lbl">Bel direct</div>
+          <a class="big" href="tel:+31318202230">0318 – 202 230</a>
+        </div>
+        <div class="contact-block">
+          <div class="lbl">Mail</div>
+          <a class="big" href="mailto:info@versenbelegd.nl">info@versenbelegd.nl</a>
+        </div>
+        <div class="contact-block">
+          <div class="lbl">Bezorggebied</div>
+          <div class="area">We bezorgen in Veenendaal, Rhenen, Ede, Ederveen, Renswoude, Scherpenzeel, Overberg, Amerongen en Achterberg. Vaste levertijden afgestemd op jouw dag — ochtendpauze, lunch of vergadering.</div>
+        </div>
+        <a href="tel:+31318202230" class="btn btn-rose">Bel direct 0318 – 202 230</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ SEO-tekst ============ -->
+<section class="seo" aria-label="Over Vers en Belegd">
+  <div class="wrap">
+    <p>Op zoek naar een betrouwbare partner voor zakelijke lunch in Veenendaal en omgeving? Vers &amp; Belegd verzorgt dagelijkse bedrijfslunch, vergaderlunch en lunch voor scholen, opleidingsinstellingen en trainingslocaties — van verse belegde broodjes en salades tot een complete vergaderlunch, bezorgd in Veenendaal. We leveren consequent op tijd, met een vaste contactpersoon die je organisatie kent. We bezorgen in Veenendaal, Rhenen, Ede, Ederveen, Renswoude, Scherpenzeel, Overberg, Amerongen en Achterberg. Vers &amp; Belegd is de zakelijke lunchpropositie van Boslaantje Doen, jouw vertrouwde adres in Veenendaal en omgeving. Vertel ons wat je nodig hebt en je krijgt binnen één werkdag een vrijblijvend voorstel op maat.</p>
+  </div>
+</section>
+
+<!-- ============ footer ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="foot-vb" role="img" aria-label="Vers en Belegd"></span>
+        <p>De persoonlijke lunchpartner voor organisaties in Veenendaal en omgeving.</p>
+        <div class="foot-parent">
+          <span>Onderdeel van</span>
+          <span class="bd-logo" role="img" aria-label="Boslaantje Doen"></span>
+          <a href="https://www.boslaantjedoen.nl/">Boslaantje Doen</a>
+        </div>
+        <div class="foot-socials">
+          <a href="https://www.instagram.com/versenbelegd/" target="_blank" rel="noopener" aria-label="Vers en Belegd op Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Zakelijke lunch</h4>
+        <a href="#zakelijk">Zakelijke lunch</a>
+        <a href="#vergader">Vergaderlunch</a>
+        <a href="#scholen">Scholen &amp; opleidingen</a>
+        <a href="#menu">Menu</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="#bestellen">Lunch aanvragen</a>
+        <a href="tel:+31318202230">0318 – 202 230</a>
+        <a href="mailto:info@versenbelegd.nl">info@versenbelegd.nl</a>
+        <a href="https://www.instagram.com/versenbelegd/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.boslaantjedoen.nl/">Naar Boslaantje Doen</a>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>Vers &amp; Belegd is een handelsnaam van Huijzer Horeca Groep VOF</span>
+      <span>KvK [KVK-NUMMER] · BTW [BTW-NUMMER]</span>
+      <span>[STRAAT + NR], Veenendaal</span>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Vers &amp; Belegd · onderdeel van Boslaantje Doen · Veenendaal · <a href="privacy.html">Privacyverklaring</a></span>
+      <span class="tagline">Zakelijke lunch — vers, betrouwbaar, lokaal</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+  const header = document.getElementById('header');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 10);
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  const navToggle = document.getElementById('navToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (navToggle && mobileMenu) {
+    const setMenu = (open) => {
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navToggle.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      mobileMenu.hidden = !open;
+    };
+    navToggle.addEventListener('click', () => setMenu(navToggle.getAttribute('aria-expanded') !== 'true'));
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true'){ setMenu(false); navToggle.focus(); }
+    });
+  }
+
+  // ---- formulier: validatie + verzenden + bedankt-scherm ----
+  const form = document.getElementById('lunchForm');
+  const successPanel = document.getElementById('formSuccess');
+  if (form) {
+    const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const showErr = (id, msg) => {
+      const field = document.getElementById(id).closest('.field');
+      field.classList.add('invalid');
+      const err = field.querySelector('.err');
+      if (err) err.textContent = msg;
+    };
+    const clearErr = (id) => {
+      const el = document.getElementById(id);
+      if (el) el.closest('.field').classList.remove('invalid');
+    };
+    ['org','naam','email','soort'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener('input', () => clearErr(id));
+    });
+    const validate = () => {
+      let ok = true;
+      const v = id => (document.getElementById(id)?.value || '').trim();
+      if (!v('org')) { showErr('org','Vul je organisatie in.'); ok = false; }
+      if (!v('naam')) { showErr('naam','Vul je naam in.'); ok = false; }
+      if (!v('email')) { showErr('email','Vul je e-mailadres in.'); ok = false; }
+      else if (!emailRe.test(v('email'))) { showErr('email','Dit e-mailadres klopt niet.'); ok = false; }
+      if (!v('soort')) { showErr('soort','Kies waar we je mee kunnen helpen.'); ok = false; }
+      return ok;
+    };
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!validate()) {
+        form.querySelector('.field.invalid input, .field.invalid select')?.focus();
+        return;
+      }
+      const btn = document.getElementById('submitBtn');
+      const original = btn.textContent;
+      btn.disabled = true; btn.textContent = 'Versturen…';
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.hidden = true;
+          if (successPanel) { successPanel.hidden = false; successPanel.scrollIntoView({behavior:'smooth', block:'center'}); }
+        } else {
+          throw new Error('server');
+        }
+      } catch (err) {
+        btn.disabled = false; btn.textContent = original;
+        // fallback: bied mailen aan als verzenden faalt
+        alert('Er ging iets mis met verzenden. Mail ons gerust direct op info@versenbelegd.nl of bel 0318 – 202 230.');
+      }
+    });
+  }
+
+  // scroll-reveal met stagger per groep
+  if (!reduce && 'IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(en => {
+        if (en.isIntersecting){
+          const siblings = Array.from(en.target.parentElement.querySelectorAll(':scope > .reveal'));
+          const idx = siblings.indexOf(en.target);
+          en.target.style.transitionDelay = (idx > 0 ? Math.min(idx,4) * 90 : 0) + 'ms';
+          en.target.classList.add('in');
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:0.12});
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+  }
+
+  // count-up voor cijfers
+  const nums = document.querySelectorAll('.num[data-count]');
+  const animateNum = (el) => {
+    const target = parseInt(el.dataset.count, 10);
+    const pre = el.dataset.prefix || '';
+    const suf = el.dataset.suffix || '';
+    if (reduce){ el.textContent = pre + target + suf; return; }
+    const dur = 1300; const start = performance.now();
+    const tick = (now) => {
+      const p = Math.min((now - start) / dur, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = pre + Math.round(target * eased) + suf;
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+  if ('IntersectionObserver' in window){
+    const nio = new IntersectionObserver((entries) => {
+      entries.forEach(en => { if (en.isIntersecting){ animateNum(en.target); nio.unobserve(en.target); } });
+    }, {threshold:0.5});
+    nums.forEach(n => nio.observe(n));
+  } else {
+    nums.forEach(animateNum);
+  }
+</script>
+</body>
+</html>
