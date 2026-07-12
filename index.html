@@ -1040,7 +1040,8 @@
   }
 
   // scroll-reveal met stagger per groep
-  if (!reduce && 'IntersectionObserver' in window){
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+     if (!reduce && 'IntersectionObserver' in window){
     const io = new IntersectionObserver((entries) => {
       entries.forEach(en => {
         if (en.isIntersecting){
