@@ -429,6 +429,16 @@
 
   .seo{background:var(--rose-wash);padding:2.6rem 0}
   .seo p{max-width:78ch;margin:0 auto;text-align:center;font-size:.94rem;line-height:1.7;color:#5a5048}
+
+           /* ---- cookiemelding ---- */
+           .cookie-consent{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--ink);color:#fff;padding:1rem 1.2rem;box-shadow:0 -4px 20px rgba(0,0,0,.2)}
+           .cookie-consent__inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem}
+           .cookie-consent p{margin:0;font-size:.9rem;max-width:60ch;color:rgba(255,255,255,.9)}
+           .cookie-consent a{color:var(--rose)}
+           .cookie-consent__actions{display:flex;gap:.6rem;flex:none}
+           .cookie-consent__actions button{border-radius:var(--r);padding:.6rem 1.2rem;font-family:var(--font-body);font-weight:700;font-size:.88rem;cursor:pointer}
+           #cookieAccept{background:var(--rose);color:var(--ink);border:none}
+           #cookieDecline{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
 </style>
 </head>
 <body>
@@ -959,6 +969,16 @@
   </div>
 </footer>
 
+     <div class="cookie-consent" id="cookieConsent" role="dialog" aria-label="Cookiemelding" hidden>
+            <div class="cookie-consent__inner">
+                     <p>We plaatsen alleen een marketingcookie (Meta Pixel) als je daar toestemming voor geeft. Zonder toestemming werkt de site gewoon. Lees onze <a href="privacy.html">privacyverklaring</a>.</p>
+                <div class="cookie-consent__actions">
+                      <button id="cookieDecline" type="button">Weigeren</button>
+                      <button id="cookieAccept" type="button">Accepteren</button>
+                </div>
+            </div>
+     </div>
+
 <script>
 
   const header = document.getElementById('header');
@@ -979,6 +999,34 @@
     document.addEventListener('keydown', e => {
       if (e.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true'){ setMenu(false); navToggle.focus(); }
     });
+
+         // ---- cookiemelding + Meta Pixel (alleen na toestemming) ----
+         (function(){
+                  var KEY = 'vb-cookie-consent';
+                  var consent = localStorage.getItem(KEY);
+                  var banner = document.getElementById('cookieConsent');
+                  function loadMetaPixel(){
+                             if (window.fbq) return;
+                             !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+                             fbq('init', 'JOUW_PIXEL_ID');
+                             fbq('track', 'PageView');
+                  }
+                  if (consent === 'accepted') loadMetaPixel();
+                  else if (consent === null && banner) banner.hidden = false;
+                  if (banner){
+                             var acceptBtn = document.getElementById('cookieAccept');
+                             var declineBtn = document.getElementById('cookieDecline');
+                             if (acceptBtn) acceptBtn.addEventListener('click', function(){
+                                          localStorage.setItem(KEY, 'accepted');
+                                          banner.hidden = true;
+                                          loadMetaPixel();
+                             });
+                             if (declineBtn) declineBtn.addEventListener('click', function(){
+                                          localStorage.setItem(KEY, 'declined');
+                                          banner.hidden = true;
+                             });
+                  }
+         })();
   }
 
   // ---- formulier: validatie + verzenden + bedankt-scherm ----
